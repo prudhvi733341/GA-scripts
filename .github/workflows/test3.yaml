@@ -1,0 +1,22 @@
+
+name: Linux Commands
+
+on:
+  push:
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Working Directory
+        run: pwd
+
+      - name: List Files
+        run: ls -la
+
+      - name: Check User
+        run: whoami
+
+      - name: Check Disk
+        run: df -h
